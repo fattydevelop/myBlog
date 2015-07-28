@@ -1,0 +1,27 @@
+{
+  "name": "dcp-blog",
+  "description": "dc's personal blog",
+  "version": "0.0.1",
+  "keywords": [
+    "blog",
+    "resume",
+    "jekyll"
+  ],
+  "homepage": "",
+  "author": "dc",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-less":"latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify":"latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-copy":"latest",
+    "grunt-contrib-watch":"latest"
+  }
+}
