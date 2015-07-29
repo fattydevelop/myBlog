@@ -1,1 +1,3 @@
 defaultPicUrl: http://ironsummitmedia.github.io/startbootstrap-clean-blog/img/home-bg.jpg
+paginate: 1
+paginate_path: "page:num"
