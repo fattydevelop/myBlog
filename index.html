@@ -32,7 +32,7 @@ title: 我的blog
                     </li>
                     {% else %}
                     <li class="disabled">
-                        <a href="/">&laquo;</a>
+                        <a href={{ site.baseurl }}>&laquo;</a>
                     </li>
                     {% endif %}
                     {% if paginator.page == 1 %}
@@ -51,13 +51,13 @@ title: 我的blog
                     </li>
                     {% else %}
                     <li>
-                         <a href="/page{{ count }}">{{ count }}</a>
+                         <a href={{ site.baseurl }}"/page{{ count }}">{{ count }}</a>
                     </li>
                    {% endif %}
                     {% endfor %}
                      {% if paginator.next_page %}
                     <li>
-                        <a href="/page{{ paginator.next_page }}" aria-label="Next">
+                        <a href={{ site.baseurl }}"/page{{ paginator.next_page }}" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </a>
                     </li>
