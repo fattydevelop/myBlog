@@ -15,7 +15,11 @@ title: 我的blog
                             {{ post.subtitle }}
                         </h3>
                 </a>
-                <p class="post-meta">Posted by <a href="#">{{ post.author }}</a> {{ post.date | date_to_string }} </p>
+                <div class="post-meta">Posted by <a href="#">{{ post.author }}</a> {{ post.date | date_to_string }}
+                {% for category in post.category %}
+                <div class="label label-info tag">{{ category }}</div>
+                {% endfor %}
+                </div>
             </div>
             <hr> {% endfor %}
             <nav style="text-align:center">
