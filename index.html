@@ -23,9 +23,9 @@ title: 我的blog
                     {% if paginator.previous_page %}
                     <li>
                         {% if pageinator.previous_page==1 %}
-                        <a href="/" aria-label="Previous">
+                        <a href={{ site.baseurl }} aria-label="Previous">
                         {% else %}
-                        <a href="{{ paginator.previous_page_path }}" aria-label="Previous">
+                        <a href={{ site.baseurl }}{{ paginator.previous_page_path }} aria-label="Previous">
                         {% endif %}
                             <span aria-hidden="true">&laquo;</span>
                         </a>
