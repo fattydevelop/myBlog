@@ -1,7 +1,6 @@
 defaultPicUrl: http://ironsummitmedia.github.io/startbootstrap-clean-blog/img/home-bg.jpg
 paginate: 8
 paginate_path: "page:num"
-baseurl: "/jekyll-demo"
 highlighter: pygments
 markdown: redcarpet
 redcarpet:
