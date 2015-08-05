@@ -7,6 +7,8 @@ headPicUrl: http://hbfile.b0.upaiyun.com/img/home/banner/8bdd5f0b7051d97168fb56a
 commens: true
 category: [markdown, test]
 ---
+##{{ page.title }}
+
 #这是一个测试markdown是否有用的文章，一下是代码片段
 
 ```javascript
@@ -18,3 +20,5 @@ function fancyAlert(arg) {
 }
 
 ```
+
+{{ page.date | date_to_string }}
