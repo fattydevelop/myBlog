@@ -1,12 +1,3 @@
----
-layout: blog
-title: vue UI库开发实践（一）
-author: dudu
-subtitle: 组件化的应用尝试
-headPicUrl: http://hbfile.b0.upaiyun.com/img/home/banner/8bdd5f0b7051d97168fb56af7dba9897f6606c4b7adb1
-commens: true
-category: [vue,component]
----
 #vue UI库开发实践（一）
 vue本身就不用过多介绍了，之所以使用vue进行UI库的开发是希望能够做一套方便自己日常使用的UI库，在使用vue做MV*开发的时候能够直接使用，而无需为基础的组件发愁。
 
@@ -15,7 +6,7 @@ vue本身就不用过多介绍了，之所以使用vue进行UI库的开发是希
 ##项目搭建
 组件化的vue开发一般选择使用webpack+vue-loader‘或者Browserify + vueify，后面这种以前已经搭建过了，迎接新时代，本次使用webpack搭建项目环境。
 首先看一下搭建好的项目结构： 
-![Alt text](./1444291876939.png)
+![Alt text](http://i11.tietuku.com/8bc38de9d908828a.png)
  文件目录很清晰，就不做解释了。有三个关键性的配置文件
 
 *	`package.json`
@@ -44,7 +35,7 @@ vue本身就不用过多介绍了，之所以使用vue进行UI库的开发是希
         ]
     }
 	}
-配置文件中指明了文件的入口和输出，以及应对不同类型文件的loader。
+配置文件中指明了文件的入口和输出，以及应对不同类型文件的`loader`（根据不同的文件类型名，正则匹配相应`loader`）。
 
 `karma.conf.js`
 karma是一个测试执行过程管理工具，不同于qunit，它并不是一个测试框架，而是管理测试框架的工具，通过karma我们可以选择是用测试框架和断言方法，此处我使用的是mocha和assert断言。
