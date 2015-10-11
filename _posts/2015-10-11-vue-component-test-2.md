@@ -1,3 +1,12 @@
+---
+layout: blog
+title: vue组件化开发实践(二)
+author: dudu
+subtitle: 从单元测试到业务构成
+headPicUrl: http://hbfile.b0.upaiyun.com/img/home/banner/8bdd5f0b7051d97168fb56af7dba9897f6606c4b7adb1
+commens: true
+category: [vue,karma，node]
+---
 #vue UI库开发实践（二）
 
 ##单元测试
